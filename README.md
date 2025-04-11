@@ -7,7 +7,7 @@
   - [3.2 Confirmation of Port Scanning Activity](#32-confirmation-of-port-scanning-activity)
   - [3.3 Investigation of Process Events](#33-investigation-of-process-events)
   - [3.4 Response and Mitigation](#34-response-and-mitigation)
-- [**🕵️‍♂️ 4. Threat Hunt Lab Summary**](#4-investigation-conclusion)
+- [**🕵️‍♂️ 4. Investigation Conclusion**](#4-investigation-conclusion)
 - [**🛡️ 5. Summary of MITRE ATT&CK Techniques**](#5-summary-of-mitre-attck-techniques)
 
 # 1. Introduction and Preparation
