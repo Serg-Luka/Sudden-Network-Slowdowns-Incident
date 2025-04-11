@@ -46,7 +46,7 @@ DeviceProcessEvents
 
 ‘lab-test’ machine was observed failing multiple connection requests.
 
-<img src="https://i.imgur.com/v7lxgGE.png" alt="None" width="600">
+<img src="https://i.imgur.com/v7lxgGE.png">
 
 **KQL Query Used:**
 
@@ -61,7 +61,7 @@ DeviceNetworkEvents
 
 After observing failed connection requests from a suspected host (10.0.0.133) in chronological order, I noticed a port scan was taking place due to the sequential order of the ports. There were several port scans being conducted.
 
-<img src="https://i.imgur.com/tF5DXty.png" alt="None" width="600">
+<img src="https://i.imgur.com/tF5DXty.png">
 
 **KQL Query Used:**
 
@@ -94,7 +94,7 @@ DeviceProcessEvents
 | project Timestamp, FileName, InitiatingProcessCommandLine
 ```
 
-<img src="https://i.imgur.com/VgSUufh.png" alt="None" width="600">
+<img src="https://i.imgur.com/VgSUufh.png">
 
 This revealed that a PowerShell script named portscan.ps1 was executed at 2025-04-10T04:37:37.1050094Z (04:37 AM on 10 April 2025).
 
@@ -102,7 +102,7 @@ This revealed that a PowerShell script named portscan.ps1 was executed at 2025-0
 
 I observed that the port scan script was launched by the SYSTEM account, which is unusual and not something configured by the administrators. As a precaution, I isolated the device and ran a malware scan. Although the scan came back clean, I decided to keep the device isolated and raised a ticket to have it re-imaged.
 
-<img src="https://i.imgur.com/bqmkw4L.png" alt="None" width="600">
+<img src="https://i.imgur.com/bqmkw4L.png">
 
 **KQL Query Used:**
 
