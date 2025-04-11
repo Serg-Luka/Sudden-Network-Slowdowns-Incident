@@ -24,7 +24,7 @@
 
 **Activity:** Ensure data is available from all key sources for analysis.
 
-<img src="https://i.imgur.com/DI5aV2j.png" alt="None" width="600">
+<img src="https://i.imgur.com/DI5aV2j.png" alt="None">
 
 **KQL Query Used:**
 
