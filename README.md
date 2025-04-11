@@ -7,7 +7,7 @@
   - [3.2 Confirmation of Port Scanning Activity](#32-confirmation-of-port-scanning-activity)
   - [3.3 Investigation of Process Events](#33-investigation-of-process-events)
   - [3.4 Response and Mitigation](#34-response-and-mitigation)
-- [**🕵️‍♂️ 4. Threat Hunt Lab Summary**](#4-threat-hunt-lab-summary)
+- [**🕵️‍♂️ 4. Threat Hunt Lab Summary**](#4-investigation-conclusion)
 - [**🛡️ 5. Summary of MITRE ATT&CK Techniques**](#5-summary-of-mitre-attck-techniques)
 
 # 1. Introduction and Preparation
@@ -119,7 +119,7 @@ DeviceProcessEvents
 
 ---
 
-# 4. Threat Hunt Lab Summary 
+# 4. Investigation Conclusion
 
 This lab investigated network performance degradation on devices within the 10.0.0.0/16 network, suspected to be due to internal activity. Initial data collection involved querying DeviceNetworkEvents, DeviceFileEvents, and DeviceProcessEvents to gather logs. Analysis revealed that the lab-test machine (IP 10.0.0.133) was conducting a port scan, identified by multiple failed connection requests to common ports (e.g., 21, 22, 80). A PowerShell script, portscan.ps1, initiated the scan at 04:37:37 on 10 April 2025, executed by the SYSTEM account—an unauthorised action. The unrestricted use of PowerShell in the environment likely enabled this network performance degradation. The device was isolated, a malware scan (which returned clean) was conducted, and a ticket was raised for re-imaging to mitigate risks. This incident highlights the need for stricter internal network controls and application restrictions.
 
